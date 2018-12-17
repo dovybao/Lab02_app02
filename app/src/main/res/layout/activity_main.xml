@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/labelTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtInputTen"
+        android:text="Name" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInputTen"
+        android:inputType="text"
+        android:layout_toRightOf="@id/labelTen"
+        android:hint="Nhập tên"
+        android:ems="10" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInput"
+        android:text="Nhập"
+        android:layout_below="@id/txtInputTen"
+        android:layout_alignRight="@id/txtInputTen"
+        android:layout_toRightOf="@id/labelTen" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSelected"
+        android:layout_below="@id/btnInput"
+        android:background="#007380"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvPerson"
+        android:layout_below="@id/txtSelected"
+        android:background="#cccccc">
+
+
+
+    </ListView>
+
+</RelativeLayout>
